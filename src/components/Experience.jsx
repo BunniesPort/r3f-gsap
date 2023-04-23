@@ -30,7 +30,7 @@ export const Experience = () => {
   });
   return (
     <>
-      <OrbitControls enableZoom={false} />
+      <OrbitControls enableZoom={false} enableRotate={false} />
       <mesh rotation={[0, -Math.PI / 3, 0]} ref={ref}>
         <boxBufferGeometry />
         <meshPhongMaterial />
