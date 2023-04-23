@@ -1,4 +1,4 @@
-import { OrbitControls, useScroll } from "@react-three/drei";
+import { useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
@@ -30,7 +30,7 @@ export const Experience = () => {
   });
   return (
     <>
-      <OrbitControls enableZoom={false} enableRotate={false} />
+      {/* <OrbitControls enableZoom={false} enableRotate={false} /> */}
       <mesh rotation={[0, -Math.PI / 3, 0]} ref={ref}>
         <boxBufferGeometry />
         <meshPhongMaterial />
